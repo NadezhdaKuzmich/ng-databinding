@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Home Component</h2>
+  <button (click)="toggle()">Toggle colour</button>
+  <div class="text-block" [class.blue]="isBlue">
+    <p>{{ interpolation }}</p>
+  </div>
+  <div class="text-block" [style.background]="isBlue ? '#ECF5FD' : '#ecfdfb'">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum alias
+      voluptas nostrum eveniet deleniti amet voluptates ipsam tenetur et a.
+    </p>
+  </div>
+</div>

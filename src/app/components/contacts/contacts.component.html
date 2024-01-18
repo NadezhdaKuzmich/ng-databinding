@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Contacts Component</h2>
+  <p>Input value: {{ value }}</p>
+  <input
+    type="text"
+    value="{{ value }}"
+    #valueRef
+    (input)="handleInput(valueRef.value)"
+  />
+  <!-- <input type="text" [value]="value" /> -->
+  <p #userName>User Name</p>
+  <p><b>get from #userName:</b> {{ userName.textContent }}</p>
+</div>
